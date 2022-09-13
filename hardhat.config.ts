@@ -22,9 +22,9 @@ if (!mnemonic) {
 }
 
 const infuraApiKey: string | undefined = process.env.INFURA_API_KEY;
-if (!infuraApiKey) {
-  throw new Error("Please set your INFURA_API_KEY in a .env file");
-}
+// if (!infuraApiKey) {
+//   throw new Error("Please set your INFURA_API_KEY in a .env file");
+// }
 
 const auroraApiKey: string | undefined = process.env.AURORA_API_KEY;
 if (!auroraApiKey) {
@@ -32,9 +32,9 @@ if (!auroraApiKey) {
 }
 
 const etherscanKey: string | undefined = process.env.ETHERSCAN_API_KEY;
-if (!etherscanKey) {
-  throw new Error("Please set your ETHERSCAN_API_KEY in a .env file");
-}
+// if (!etherscanKey) {
+//   throw new Error("Please set your ETHERSCAN_API_KEY in a .env file");
+// }
 
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
