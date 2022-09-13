@@ -29,7 +29,7 @@ async function main(): Promise<void> {
     
     // wrapped eth address
     // original address: "0xC9BdeEd33CD01541e1eeD10f90519d2C06Fe3feB";
-    const WETH_ADDRESS_AURORA_MAINNET = "0xB8AD40DCfc163694F981D2e12704C0a7af9387DF";  // mocked weth
+    const WETH_ADDRESS_AURORA_MAINNET = "0xD6B7C7811CA83E1034D59964430DacdAd3B4D529";  // mocked weth
     const uniRouter: UniswapV2Router02__factory = await ethers.getContractFactory("UniswapV2Router02");
     const router = <UniswapV2Router02>await uniRouter.deploy(factory.address, WETH_ADDRESS_AURORA_MAINNET);
     await router.deployed();
